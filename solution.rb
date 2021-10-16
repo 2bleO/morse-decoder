@@ -8,3 +8,7 @@ def morse_directory
     '--..' => 'Z'
   }
 end
+
+def decode_char(char)
+  morse_directory[char]
+end
