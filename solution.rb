@@ -12,3 +12,7 @@ end
 def decode_char(char)
   morse_directory[char]
 end
+
+def decode_word(word)
+  word.split.map { |letter| decode_char(letter) }.join
+end
